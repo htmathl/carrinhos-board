@@ -28,22 +28,27 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@eslint/js", "npm:9.19.0"],\
+          ["@faker-js/faker", "npm:9.4.0"],\
           ["@radix-ui/react-slot", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:1.1.2"],\
+          ["@types/faker", "npm:6.6.8"],\
           ["@types/node", "npm:22.13.1"],\
           ["@types/react", "npm:19.0.8"],\
           ["@types/react-dom", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:19.0.3"],\
           ["@vitejs/plugin-react-swc", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:3.7.2"],\
           ["autoprefixer", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:10.4.20"],\
+          ["chart.js", "npm:4.4.7"],\
           ["class-variance-authority", "npm:0.7.1"],\
           ["clsx", "npm:2.1.1"],\
           ["eslint", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:9.19.0"],\
           ["eslint-plugin-react-hooks", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:5.1.0"],\
           ["eslint-plugin-react-refresh", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:0.4.18"],\
+          ["faker", "npm:6.6.6"],\
           ["framer-motion", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:12.4.1"],\
           ["globals", "npm:15.14.0"],\
           ["lucide-react", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:0.474.0"],\
           ["postcss", "npm:8.5.1"],\
           ["react", "npm:19.0.0"],\
+          ["react-chartjs-2", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:5.3.0"],\
           ["react-dom", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:19.0.0"],\
           ["react-router", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:7.1.5"],\
           ["tailwind-merge", "npm:3.0.1"],\
@@ -391,6 +396,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@faker-js/faker", [\
+      ["npm:9.4.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@faker-js-faker-npm-9.4.0-af8b6a70a0-10c0.zip/node_modules/@faker-js/faker/",\
+        "packageDependencies": [\
+          ["@faker-js/faker", "npm:9.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@humanfs/core", [\
       ["npm:0.19.1", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@humanfs-core-npm-0.19.1-e2e7aaeb6e-10c0.zip/node_modules/@humanfs/core/",\
@@ -516,6 +530,15 @@ const RAW_RUNTIME_STATE =
           ["@jridgewell/trace-mapping", "npm:0.3.25"],\
           ["@jridgewell/resolve-uri", "npm:3.1.2"],\
           ["@jridgewell/sourcemap-codec", "npm:1.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@kurkle/color", [\
+      ["npm:0.3.4", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@kurkle-color-npm-0.3.4-fbd637031f-10c0.zip/node_modules/@kurkle/color/",\
+        "packageDependencies": [\
+          ["@kurkle/color", "npm:0.3.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -957,6 +980,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-estree-npm-1.0.6-b5e23f2ea2-10c0.zip/node_modules/@types/estree/",\
         "packageDependencies": [\
           ["@types/estree", "npm:1.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/faker", [\
+      ["npm:6.6.8", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-faker-npm-6.6.8-33134c5b48-10c0.zip/node_modules/@types/faker/",\
+        "packageDependencies": [\
+          ["@types/faker", "npm:6.6.8"],\
+          ["faker", "npm:6.6.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1499,22 +1532,27 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["carrinhos-board", "workspace:."],\
           ["@eslint/js", "npm:9.19.0"],\
+          ["@faker-js/faker", "npm:9.4.0"],\
           ["@radix-ui/react-slot", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:1.1.2"],\
+          ["@types/faker", "npm:6.6.8"],\
           ["@types/node", "npm:22.13.1"],\
           ["@types/react", "npm:19.0.8"],\
           ["@types/react-dom", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:19.0.3"],\
           ["@vitejs/plugin-react-swc", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:3.7.2"],\
           ["autoprefixer", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:10.4.20"],\
+          ["chart.js", "npm:4.4.7"],\
           ["class-variance-authority", "npm:0.7.1"],\
           ["clsx", "npm:2.1.1"],\
           ["eslint", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:9.19.0"],\
           ["eslint-plugin-react-hooks", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:5.1.0"],\
           ["eslint-plugin-react-refresh", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:0.4.18"],\
+          ["faker", "npm:6.6.6"],\
           ["framer-motion", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:12.4.1"],\
           ["globals", "npm:15.14.0"],\
           ["lucide-react", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:0.474.0"],\
           ["postcss", "npm:8.5.1"],\
           ["react", "npm:19.0.0"],\
+          ["react-chartjs-2", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:5.3.0"],\
           ["react-dom", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:19.0.0"],\
           ["react-router", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:7.1.5"],\
           ["tailwind-merge", "npm:3.0.1"],\
@@ -1534,6 +1572,16 @@ const RAW_RUNTIME_STATE =
           ["chalk", "npm:4.1.2"],\
           ["ansi-styles", "npm:4.3.0"],\
           ["supports-color", "npm:7.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["chart.js", [\
+      ["npm:4.4.7", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/chart.js-npm-4.4.7-157ee9557e-10c0.zip/node_modules/chart.js/",\
+        "packageDependencies": [\
+          ["chart.js", "npm:4.4.7"],\
+          ["@kurkle/color", "npm:0.3.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2005,6 +2053,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/exponential-backoff-npm-3.1.1-04df458b30-10c0.zip/node_modules/exponential-backoff/",\
         "packageDependencies": [\
           ["exponential-backoff", "npm:3.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["faker", [\
+      ["npm:6.6.6", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/faker-npm-6.6.6-555f97fca7-10c0.zip/node_modules/faker/",\
+        "packageDependencies": [\
+          ["faker", "npm:6.6.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3197,6 +3254,32 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/react-npm-19.0.0-e33c9aa1c0-10c0.zip/node_modules/react/",\
         "packageDependencies": [\
           ["react", "npm:19.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-chartjs-2", [\
+      ["npm:5.3.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/react-chartjs-2-npm-5.3.0-f94bd8a632-10c0.zip/node_modules/react-chartjs-2/",\
+        "packageDependencies": [\
+          ["react-chartjs-2", "npm:5.3.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:5.3.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-chartjs-2-virtual-243b102a9a/4/AppData/Local/Yarn/Berry/cache/react-chartjs-2-npm-5.3.0-f94bd8a632-10c0.zip/node_modules/react-chartjs-2/",\
+        "packageDependencies": [\
+          ["react-chartjs-2", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:5.3.0"],\
+          ["@types/chart.js", null],\
+          ["@types/react", "npm:19.0.8"],\
+          ["chart.js", "npm:4.4.7"],\
+          ["react", "npm:19.0.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/chart.js",\
+          "@types/react",\
+          "chart.js",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
