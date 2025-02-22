@@ -12,6 +12,14 @@ def process_dataframes(df, last=False, ano_atual=datetime.now().year):
             df.columns = ['a', 'b']
             df_ = df['a'].str.split(expand=True)
     else:
+        # df_new_cols = df[3].str.split(expand=True)
+        # df = pd.concat([df.iloc[:, :3], df_new_cols, df.iloc[:, 4:]], axis=1)
+        if len(df.columns) < 6:
+            df_new_cols = df[3].str.split(expand=True)
+            df = pd.concat([df.iloc[:, :3], df_new_cols, df.iloc[:, 4:]], axis=1)
+            df = df.iloc[:, :-1]
+            df.columns = [0, 1, 2, 3, 4, 5]
+            
         mid_point = len(df.columns) // 2
         df1 = df.iloc[:, :mid_point]
         df2 = df.iloc[:, mid_point:]
@@ -22,6 +30,7 @@ def process_dataframes(df, last=False, ano_atual=datetime.now().year):
         
     df_.columns = ['data', 'estabelecimento', 'valor']
     
+    df_.reset_index(drop=True, inplace=True)
     if df_['data'].str.contains('Comprasparceladas-próximasfaturas').any():
         df_ = df_.loc[:df_[df_['data'] == 'Comprasparceladas-próximasfaturas'].index[0] - 1]
     elif df_['data'].str.contains('Compr').any():
@@ -33,10 +42,6 @@ def process_dataframes(df, last=False, ano_atual=datetime.now().year):
     df_.reset_index(drop=True, inplace=True)
     df_['estabelecimento'] = df_['estabelecimento'].apply(lambda x: re.sub(r'[^a-zA-Z]', '', x))
     
-    # df_['valor'] = df_['valor'].str.replace(',', '.')
-    # df_['valor'] = df_['valor'].str.replace(' E', '')
-    # df_['valor'] = df_['valor'].astype(float)
-    # print(df_, df_['valor'].sum(), "\n")
     return df_
 
 table_settings = {
@@ -44,8 +49,8 @@ table_settings = {
     "horizontal_strategy": "text",
 }
 
-arq = "azul_10_2024"
-mFim = 2
+arq = "azul_01_2024"
+mFim = 3
 
 with pdfplumber.open(f"../data/{arq}.pdf") as pdf:
     tables = []
@@ -65,19 +70,22 @@ with pdfplumber.open(f"../data/{arq}.pdf") as pdf:
     ultima_pagina = pdf.pages[fim]
     print(ultima_pagina)
     last_table = ultima_pagina.extract_table(table_settings)
-    last_table = process_dataframes(pd.DataFrame(last_table), last=True, ano_atual=2024)
+    # last_table = process_dataframes(pd.DataFrame(last_table), last=True, ano_atual=2024)
     
     process_tables = []
     for table in tables:
         if table:
             process_tables.append(process_dataframes(pd.DataFrame(table), ano_atual=2024))
     
-    process_tables.append(last_table)
+    # process_tables.append(last_table)
     
     final_data = pd.concat(process_tables)
     
     final_data['valor'] = final_data['valor'].str.replace(',', '.')
     final_data['valor'] = final_data['valor'].str.replace(' E', '')
+    final_data['valor'] = final_data['valor'].str.replace(' L', '')
+    final_data['valor'] = final_data['valor'].str.replace('*MICROSOFT', '35.9')
+    
     final_data['valor'] = final_data['valor'].astype(float)
     final_data = final_data.groupby(['data', 'estabelecimento']).agg({'valor': 'sum'}).reset_index()
     final_data = final_data.sort_values(by='valor', ascending=False)
@@ -95,7 +103,7 @@ with pdfplumber.open(f"../data/{arq}.pdf") as pdf:
 
     final_data['bg'] = [cores[i % 6]['bg'] for i in range(len(final_data))]
     final_data['border'] = [cores[i % 6]['border'] for i in range(len(final_data))] 
-    final_data['mes'] = final_data['data'].dt.month.max() + 1 if mFim == 2 else final_data['data'].dt.month.max()
+    final_data['mes'] = final_data['data'].dt.month.max() + 1 if mFim == 2 else final_data['data'].dt.month.max() - 11
     
     
     final_data.reset_index(drop=True, inplace=True)
