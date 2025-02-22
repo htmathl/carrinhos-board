@@ -746,15 +746,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/faker@npm:^6":
-  version: 6.6.8
-  resolution: "@types/faker@npm:6.6.8"
-  dependencies:
-    faker: "npm:*"
-  checksum: 10c0/afd46dfb4c425b109acf5b09d3e15e9dea88a8da794c2090ae51dd7895e11015a69251bdb155117d518704189966eb15a556df4056e225a0ca7ffd15c658dded
-  languageName: node
-  linkType: hard
-
 "@types/json-schema@npm:^7.0.15":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
@@ -1139,7 +1130,6 @@ __metadata:
     "@eslint/js": "npm:^9.19.0"
     "@faker-js/faker": "npm:^9.4.0"
     "@radix-ui/react-slot": "npm:^1.1.2"
-    "@types/faker": "npm:^6"
     "@types/node": "npm:^22.13.1"
     "@types/react": "npm:^19.0.8"
     "@types/react-dom": "npm:^19.0.3"
@@ -1151,7 +1141,6 @@ __metadata:
     eslint: "npm:^9.19.0"
     eslint-plugin-react-hooks: "npm:^5.0.0"
     eslint-plugin-react-refresh: "npm:^0.4.18"
-    faker: "npm:^6.6.6"
     framer-motion: "npm:^12.4.1"
     globals: "npm:^15.14.0"
     lucide-react: "npm:^0.474.0"
@@ -1616,13 +1605,6 @@ __metadata:
   version: 3.1.1
   resolution: "exponential-backoff@npm:3.1.1"
   checksum: 10c0/160456d2d647e6019640bd07111634d8c353038d9fa40176afb7cd49b0548bdae83b56d05e907c2cce2300b81cae35d800ef92fefb9d0208e190fa3b7d6bb579
-  languageName: node
-  linkType: hard
-
-"faker@npm:*, faker@npm:^6.6.6":
-  version: 6.6.6
-  resolution: "faker@npm:6.6.6"
-  checksum: 10c0/21f6a57adc921ffb61e5ff767024a699a414047264ff4bbb080bd4994ec5a8061e1828aae9a4be812f6f356f1b6fd082bc2d54df7c37163b943a421a8f7f7079
   languageName: node
   linkType: hard
 

@@ -30,7 +30,6 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.19.0"],\
           ["@faker-js/faker", "npm:9.4.0"],\
           ["@radix-ui/react-slot", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:1.1.2"],\
-          ["@types/faker", "npm:6.6.8"],\
           ["@types/node", "npm:22.13.1"],\
           ["@types/react", "npm:19.0.8"],\
           ["@types/react-dom", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:19.0.3"],\
@@ -42,7 +41,6 @@ const RAW_RUNTIME_STATE =
           ["eslint", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:9.19.0"],\
           ["eslint-plugin-react-hooks", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:5.1.0"],\
           ["eslint-plugin-react-refresh", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:0.4.18"],\
-          ["faker", "npm:6.6.6"],\
           ["framer-motion", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:12.4.1"],\
           ["globals", "npm:15.14.0"],\
           ["lucide-react", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:0.474.0"],\
@@ -984,16 +982,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@types/faker", [\
-      ["npm:6.6.8", {\
-        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-faker-npm-6.6.8-33134c5b48-10c0.zip/node_modules/@types/faker/",\
-        "packageDependencies": [\
-          ["@types/faker", "npm:6.6.8"],\
-          ["faker", "npm:6.6.6"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@types/json-schema", [\
       ["npm:7.0.15", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-json-schema-npm-7.0.15-fd16381786-10c0.zip/node_modules/@types/json-schema/",\
@@ -1534,7 +1522,6 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.19.0"],\
           ["@faker-js/faker", "npm:9.4.0"],\
           ["@radix-ui/react-slot", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:1.1.2"],\
-          ["@types/faker", "npm:6.6.8"],\
           ["@types/node", "npm:22.13.1"],\
           ["@types/react", "npm:19.0.8"],\
           ["@types/react-dom", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:19.0.3"],\
@@ -1546,7 +1533,6 @@ const RAW_RUNTIME_STATE =
           ["eslint", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:9.19.0"],\
           ["eslint-plugin-react-hooks", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:5.1.0"],\
           ["eslint-plugin-react-refresh", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:0.4.18"],\
-          ["faker", "npm:6.6.6"],\
           ["framer-motion", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:12.4.1"],\
           ["globals", "npm:15.14.0"],\
           ["lucide-react", "virtual:663b2e7afc4635e70fee47c9d6594f32b37880f513a70b9fc0779cd528dae9976d74bb9018002a75dcb347ad62d895099482e8626d613bc5b74d3b2cfa5c6abd#npm:0.474.0"],\
@@ -2053,15 +2039,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/exponential-backoff-npm-3.1.1-04df458b30-10c0.zip/node_modules/exponential-backoff/",\
         "packageDependencies": [\
           ["exponential-backoff", "npm:3.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["faker", [\
-      ["npm:6.6.6", {\
-        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/faker-npm-6.6.6-555f97fca7-10c0.zip/node_modules/faker/",\
-        "packageDependencies": [\
-          ["faker", "npm:6.6.6"]\
         ],\
         "linkType": "HARD"\
       }]\
