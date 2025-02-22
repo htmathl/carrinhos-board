@@ -115,8 +115,11 @@ export default function ReportPage() {
     // Novo estado para armazenar os dados brutos do JSON e preencher a tabela
     const [tableData, setTableData] = useState<any[]>([]);
 
+    const dataMonth = window.location.href.split('q=').pop();
+    const card = dataMonth?.split('_')[0];
+
     useEffect(() => {
-        fetch('/data/azul_09_2024.json')
+        fetch(`/data/${dataMonth}_2024.json`)
             .then(response => response.json())
             .then((json) => {
                 // Armazena os dados completos para uso na tabela
@@ -144,7 +147,7 @@ export default function ReportPage() {
                 const mes = json.map((item: any) => tranformMonth(item.mes))[0];
                 setThisMonth(mes);
             });
-        fetch('/data/all_azul.json')
+        fetch(`/data/all_${card}.json`)
             .then(response => response.json())
             .then((json) => {
                 const meses = json.map((item: any) => tranformMonth(item.mes));
@@ -156,7 +159,7 @@ export default function ReportPage() {
                     if (!agrupado[item.mes]) {
                         agrupado[item.mes] = 0;
                     }
-                    agrupado[item.mes] += item.valor;
+                    agrupado[item.mes] += item.valor;''
                 });
                 const valores = Object.values(agrupado);
                 setValorMes(valores);
@@ -189,18 +192,6 @@ export default function ReportPage() {
                 },
             ],
         })
-        // const dataLine = {
-        //     labels,
-        //     datasets: [
-        //         {
-        //             fill: true,
-        //             label: 'Dataset 2',
-        //             data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
-        //             borderColor: 'rgb(232,17,75)',
-        //             backgroundColor: 'rgba(232,17,75, 0.3)',
-        //         },
-        //     ],
-        // };
     }, [valor, estabelecimento, backgroundColor, borderColor]);
 
     return (

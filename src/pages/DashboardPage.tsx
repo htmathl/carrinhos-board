@@ -20,21 +20,31 @@ export default function DashboardPage() {
                         <img src={latamLogo} alt="LATAM" style={{ transform: "scale(1.5)", margin: "auto" }} />
                     </div>
                     <div className="flex flex-col gap-3 items-center">
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Agosto
-                        </Button>
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Setembro
-                        </Button>
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Outubro
-                        </Button>
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Novembro
-                        </Button>
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Dezembro
-                        </Button>
+                        <a href="/report?q=latam_08">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Agosto
+                            </Button>
+                        </a>
+                        <a href="/report?q=latam_09">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Setembro
+                            </Button>
+                        </a>
+                        <a href="/report?q=latam_10">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Outubro
+                            </Button>
+                        </a>
+                        <a href="/report?q=latam_11">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Novembro
+                            </Button>
+                        </a>
+                        <a href="/report?q=latam_12">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Dezembro
+                            </Button>
+                        </a>
                     </div>
                 </Card>
 
@@ -44,21 +54,31 @@ export default function DashboardPage() {
                         <img src="https://www.voeazul.com.br/content/dam/azul/voe-azul/institucional/logo-azul-branco.svg" alt="Azul" className="m-auto" />
                     </div>
                     <div className="flex flex-col gap-3 items-center">
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Agosto
-                        </Button>
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Setembro
-                        </Button>
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Outubro
-                        </Button>
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Novembro
-                        </Button>
-                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                            Dezembro
-                        </Button>
+                        <a href="/report?q=azul_08">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Agosto
+                            </Button>
+                        </a>
+                        <a href="/report?q=azul_09">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Setembro
+                            </Button>
+                        </a>
+                        <a href="/report?q=azul_10">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Outubro
+                            </Button>
+                        </a>
+                        <a href="/report?q=azul_11">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Novembro
+                            </Button>
+                        </a>
+                        <a href="/report?q=azul_12">
+                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
+                                Dezembro
+                            </Button>
+                        </a>
                     </div>
                 </Card>
             </div>
