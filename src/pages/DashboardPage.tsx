@@ -2,8 +2,12 @@ import { Card } from "../components/ui/card"
 import { Button } from "../components/ui/button"
 
 import latamLogo from '../assets/latam_logo.svg'
+import { useNavigate } from "react-router"
 
 export default function DashboardPage() {
+
+    const navigate = useNavigate()
+
     return (
         <div className="bg-zinc-900 text-white h-screen flex flex-col items-center pt-8 gap-12">
             <header className="flex flex-col justify-between items-center gap-2">
@@ -20,31 +24,21 @@ export default function DashboardPage() {
                         <img src={latamLogo} alt="LATAM" style={{ transform: "scale(1.5)", margin: "auto" }} />
                     </div>
                     <div className="flex flex-col gap-3 items-center">
-                        <a href="/report?q=latam_08">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Agosto
-                            </Button>
-                        </a>
-                        <a href="/report?q=latam_09">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Setembro
-                            </Button>
-                        </a>
-                        <a href="/report?q=latam_10">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Outubro
-                            </Button>
-                        </a>
-                        <a href="/report?q=latam_11">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Novembro
-                            </Button>
-                        </a>
-                        <a href="/report?q=latam_12">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Dezembro
-                            </Button>
-                        </a>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=latam_08')}>
+                            Agosto
+                        </Button>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=latam_09')}>
+                            Setembro
+                        </Button>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=latam_10')}>
+                            Outubro
+                        </Button>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=latam_11')}>
+                            Novembro
+                        </Button>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=latam_12')}>
+                            Dezembro
+                        </Button>
                     </div>
                 </Card>
 
@@ -54,31 +48,21 @@ export default function DashboardPage() {
                         <img src="https://www.voeazul.com.br/content/dam/azul/voe-azul/institucional/logo-azul-branco.svg" alt="Azul" className="m-auto" />
                     </div>
                     <div className="flex flex-col gap-3 items-center">
-                        <a href="/report?q=azul_08">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Agosto
-                            </Button>
-                        </a>
-                        <a href="/report?q=azul_09">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Setembro
-                            </Button>
-                        </a>
-                        <a href="/report?q=azul_10">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Outubro
-                            </Button>
-                        </a>
-                        <a href="/report?q=azul_11">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Novembro
-                            </Button>
-                        </a>
-                        <a href="/report?q=azul_12">
-                            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]">
-                                Dezembro
-                            </Button>
-                        </a>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=azul_08')}>
+                            Agosto
+                        </Button>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=azul_09')}>
+                            Setembro
+                        </Button>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=azul_10')}>
+                            Outubro
+                        </Button>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=azul_11')}>
+                            Novembro
+                        </Button>
+                        <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 hover:border-white w-[160px]" onClick={() => navigate('/report?q=azul_12')}>
+                            Dezembro
+                        </Button>
                     </div>
                 </Card>
             </div>
